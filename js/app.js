@@ -1,11 +1,11 @@
 //QUIZ START
 let quiz_form = document.querySelector('.quiz__form');
 if (quiz_form) {
-	let PrevBtn = quiz_form.querySelector('.btnPrev');
-	let nextBtn = quiz_form.querySelector('.btnNext');
-	let quizAll = quiz_form.querySelectorAll('.quiz__block');
-	let currentQ = quiz_form.querySelector('.currentQ');
-	let progressQ = quiz_form.querySelector('.progress');
+	let PrevBtn = document.querySelector('.btnPrev');
+	let nextBtn = document.querySelector('.btnNext');
+	let quizAll = document.querySelectorAll('.quiz__block');
+	let currentQ = document.querySelector('.currentQ');
+	let progressQ = document.querySelector('.progress');
 	let progress = 0;
 	let count = 0;
 	let progressPercent = 100 / (quizAll.length - 1);
@@ -14,7 +14,7 @@ if (quiz_form) {
 	initProgress();
 	removeBtn();
 
-	quiz_form.querySelector('.allQ').textContent = `${quizAll.length}`;
+	document.querySelector('.allQ').textContent = `${quizAll.length}`;
 
 	nextBtn.addEventListener('click', function () {
 		currentQ.textContent++;

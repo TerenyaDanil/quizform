@@ -205,11 +205,11 @@ body._lock {
 }
 
 .anketa__dop-l {
-  left: 0;
+  left: -10%;
 }
 
 .anketa__dop-r {
-  right: 0;
+  right: -10%;
 }
 
 .anketa__circle {
